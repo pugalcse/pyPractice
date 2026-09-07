@@ -28,6 +28,7 @@ class FrenchDeck:
         return rank_value * len(FrenchDeck.suits) + FrenchDeck.suit_values[card.suit]
     
 deck = FrenchDeck()
-deck_sorted = deck.sorted(deck)
+print(len(deck))
+deck_sorted = deck.sorted(deck._cards)
 for card in deck_sorted:
     print(card)
